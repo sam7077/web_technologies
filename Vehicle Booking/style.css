@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* App Container */
+.app {
+  width: 320px;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* Pages */
+.page {
+  position: absolute;
+  width: 320px;
+  height: 550px;
+  padding: 20px;
+
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+
+  transform: translateX(100%);
+  transition: 0.4s ease;
+}
+
+.page.active {
+  transform: translateX(0);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #333;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* Back button */
+.back {
+  width: auto;
+  background: none;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Checkbox */
+.checkbox label {
+  display: block;
+  margin: 5px 0;
+  color: white;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Vehicle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Login -->
+  <div id="loginPage" class="page active">
+    <h2>Welcome</h2>
+    <input type="text" placeholder="Mobile Number">
+    <input type="text" placeholder="OTP">
+    <button onclick="nextPage('dashboard')">Verify</button>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dashboard" class="page">
+    <button class="back" onclick="goBack()">⬅</button>
+    <h2>Dashboard</h2>
+    <button onclick="nextPage('owner')">Register Vehicle</button>
+    <button onclick="nextPage('booking')">Book Vehicle</button>
+  </div>
+
+  <!-- Owner -->
+  <div id="owner" class="page">
+    <button class="back" onclick="goBack()">⬅</button>
+    <h2>Vehicle Type</h2>
+
+    <div class="checkbox">
+      <label><input type="checkbox"> Auto</label>
+      <label><input type="checkbox"> Pickup</label>
+      <label><input type="checkbox"> Car</label>
+      <label><input type="checkbox"> Mini Bus</label>
+    </div>
+
+    <button onclick="nextPage('dashboard')">Submit</button>
+  </div>
+
+  <!-- Booking -->
+  <div id="booking" class="page">
+    <button class="back" onclick="goBack()">⬅</button>
+    <h2>Book Vehicle</h2>
+
+    <input type="date">
+    <input type="text" placeholder="From Location">
+    <input type="text" placeholder="To Location">
+
+    <button onclick="nextPage('result')">Search</button>
+  </div>
+
+  <!-- Result -->
+  <div id="result" class="page">
+    <button class="back" onclick="goBack()">⬅</button>
+    <h2>Available</h2>
+
+    <div class="card">Auto - 9876543210</div>
+    <div class="card">Car - 9123456780</div>
+    <div class="card">Pickup - 9012345678</div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
