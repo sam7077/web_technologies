@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Login</h2>
+
+  <form onsubmit="return login()">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+
+    <div class="options">
+      <label><input type="checkbox" id="remember">Remember Me</label>
+    </div>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <p id="error"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
